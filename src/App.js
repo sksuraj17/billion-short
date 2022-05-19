@@ -27,7 +27,7 @@ function App() {
 			<header>
 			<img src={logo}></img>
 			<h1>Billion Short 🔍</h1>
-			<h2>A Wiki Clone</h2>
+			{(!searchInfo.totalhits) ? <h2>A Wiki Clone</h2>:<h2>Work by Suraj SK   ♥️</h2>}
 			<form className="search-box" onSubmit={handleSearch}>
 				<input type="search" placeholder="Whatever you are looking for is looking for you!" 
 					value={search}
