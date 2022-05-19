@@ -34,7 +34,7 @@ function App() {
 					onChange={e => setSearch(e.target.value)}>
 				</input>
 			</form>
-			{(!searchInfo.totalhits) ? 'Start Fetching...👾⌛':<p className='count'>Search Outcomes: {searchInfo.totalhits}</p>}
+			{(!searchInfo.totalhits) ? <p className='fetch'>Start Exploring..🌎✨⌛</p>:<p className='count'>Search Outcomes: {searchInfo.totalhits}</p>}
 			</header>
 			<div className="results">
 				{results.map((result, i) =>{
