@@ -72,6 +72,11 @@ h2{
   transition: 0.5s;
 }
 
+.search-box:focus-within{
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  transform: translate(5px)
+}
+
 .count{
   color: #000000;
   font-size: 18px;

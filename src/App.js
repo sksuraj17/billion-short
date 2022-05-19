@@ -5,21 +5,22 @@ import logo from './logo/wiki-logo.png';
 function App() {
 	const [search, setSearch] = useState("");
 	const [results, setResults] = useState([]);
-	const [searchInfo, setSeachInfo] = useState({});
+	const [searchInfo, setSearchInfo] = useState({});
 
 	const handleSearch = async e => {
 		e.preventDefault();
-		if (search ==='')
-			return;
+		if (search === '') return;
 
 		const endpoint = 'https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${search}';
-		const response = await fetch(endpoint)
+		const response = await fetch(endpoint);
 		if (!response.ok){
 			throw Error(response.statusText);
 		}
 
 		const json = await response.json();
-		console.log(json);
+
+		setResults(json.query.search);
+		setSearchInfo(json.query.searchinfo);
 	}
 	return (
 		<div className="App">
@@ -33,7 +34,7 @@ function App() {
 					onChange={e => setSearch(e.target.value)}>
 				</input>
 			</form>
-			<p className="count">Search Outcomes: 0</p>
+			{(searchInfo.totalhits) ? <p className='count'>Search Outcomes: {searchInfo.totalhits}</p>: ''}
 			</header>
 			<div className="results">
 				<div className="result">
