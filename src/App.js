@@ -1,10 +1,12 @@
-
+import logo from './logo/wiki-logo.png';
 
 function App() {
 	return (
 		<div className="App">
 			<header>
+			<img src={logo}></img>
 			<h1>Billion Short</h1>
+			<h2>A Wiki Clone</h2>
 			<form className="search-box">
 				<input type="search" placeholder="Whatever you are looking for is looking for you!"></input>
 			</form>

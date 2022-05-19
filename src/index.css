@@ -21,6 +21,12 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
+}
+
+img{
+  margin-bottom: 20px;
+  height: 100px;
 }
 
 h1{
@@ -30,7 +36,17 @@ h1{
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 15px;
-  text-shadow: 3px 3px #cecbff;
+  text-shadow: 3px 3px #dcdaff;
+}
+
+h2{
+  font-family: Gill Sans MT;
+  font-style: italic;
+  color: rgb(81, 81, 81);
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .search-box{
@@ -56,13 +72,26 @@ h1{
   transition: 0.5s;
 }
 
-.search-box:focus-within{
-  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
-  transform: translate(10px)  
-}
-
 .count{
   color: #000000;
   font-family: Gill Sans MT;
   font-size: 18px;
+}
+
+.results{
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.result{
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: 0.4s;
+}
+
+.result:hover{
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
 }
