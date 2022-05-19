@@ -34,7 +34,8 @@ function App() {
 					onChange={e => setSearch(e.target.value)}>
 				</input>
 			</form>
-			{(!searchInfo.totalhits) ? <p className='fetch'>Start Exploring..🌎✨⌛</p>:<p className='count'>Search Outcomes: {searchInfo.totalhits}</p>}
+						{(!searchInfo.totalhits) ? <h2>A Wiki Clone</h2>:<a href="https://www.linkedin.com/in/suraj-sk/" className='work'>Work by Suraj SK   ♥️</a>}
+
 			</header>
 			<div className="results">
 				{results.map((result, i) =>{
