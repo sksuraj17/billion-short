@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Segoe UI;
   font-size: 16px;
 }
 
@@ -31,23 +31,22 @@ img{
 }
 
 h1{
-  font-family: Gill Sans MT;
-  color: rgb(90, 90, 90);
+  font-family:'Gill Sans MT';
+  color: rgb(80, 80, 80);
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 15px;
-  text-shadow: 3px 3px #dcdaff;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px #dddddd;
 }
 
 h2{
-  font-family: Gill Sans MT;
+  font-family:'Segoe UI';
   font-style: italic;
-  color: rgb(81, 81, 81);
+  color: rgb(90, 54, 153);
   font-size: 20px;
   text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .search-box{
@@ -75,8 +74,8 @@ h2{
 
 .count{
   color: #000000;
-  font-family: Gill Sans MT;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .results{
