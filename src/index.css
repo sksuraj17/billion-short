@@ -49,6 +49,18 @@ h2{
   margin-bottom: 20px;
 }  
 
+.work{
+  font-family:'Segoe UI';
+  font-style: italic;
+  color: rgb(90, 54, 153);
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  animation: animate 2s linear infinite;
+}
+
 .fetch{
   font-weight: 500;
   font-size: 17px;
