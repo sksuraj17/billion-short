@@ -76,11 +76,6 @@ h2{
   transform: translate(5px)
 }
 
-.marquee_style{
-  color:yellowgreen;
-  background-color: rgb(244, 250, 255)
-}
-
 .count{
   color: #000000;
   font-size: 18px;

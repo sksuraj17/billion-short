@@ -34,8 +34,7 @@ function App() {
 					onChange={e => setSearch(e.target.value)}>
 				</input>
 			</form>
-			{(!searchInfo.totalhits) ? <Marquee className='marquee_style' speed={200} gradientColor={244,250,255}> Done by Suraj</Marquee>
- :<p className='count'>Search Outcomes: {searchInfo.totalhits}</p>}
+			{(!searchInfo.totalhits) ? 'Start Fetching...👾⌛':<p className='count'>Search Outcomes: {searchInfo.totalhits}</p>}
 			</header>
 			<div className="results">
 				{results.map((result, i) =>{
