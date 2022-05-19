@@ -8,7 +8,7 @@ function App() {
 			<form className="search-box">
 				<input type="search" placeholder="Whatever you are looking for is looking for you!"></input>
 			</form>
-			<p>Search Results: 0</p>
+			<p className="count">Search Outcomes: 0</p>
 			</header>
 			<div className="results">
 				<div className="result">

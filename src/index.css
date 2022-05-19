@@ -1,13 +1,68 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: rgb(244, 250, 255)
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 75vh;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-family: Gill Sans MT;
+  color: rgb(90, 90, 90);
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px #cecbff;
+}
+
+.search-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 480px;
+  margin-bottom: 15px;
+  transition: 0.4s;
+}
+
+.search-box input{
+  display: block;
+  font-size: 15px;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.search-box:focus-within{
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  transform: translate(10px)  
+}
+
+.count{
+  color: #000000;
+  font-family: Gill Sans MT;
+  font-size: 18px;
 }
