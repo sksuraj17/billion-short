@@ -1,4 +1,5 @@
-import { toHaveErrorMessage } from '@testing-library/jest-dom/dist/matchers';
+import React from 'react';
+import Marquee from "react-fast-marquee";
 import { useState } from 'react';
 import logo from './logo/wiki-logo.png';
 
@@ -33,7 +34,8 @@ function App() {
 					onChange={e => setSearch(e.target.value)}>
 				</input>
 			</form>
-			{(searchInfo.totalhits) ? <p className='count'>Search Outcomes: {searchInfo.totalhits}</p>: ''}
+			{(!searchInfo.totalhits) ? <Marquee className='marquee_style' speed={200} gradientColor={244,250,255}> Done by Suraj</Marquee>
+ :<p className='count'>Search Outcomes: {searchInfo.totalhits}</p>}
 			</header>
 			<div className="results">
 				{results.map((result, i) =>{
