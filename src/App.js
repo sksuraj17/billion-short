@@ -12,7 +12,10 @@ function App() {
 			<h1>Billion Short 🔍</h1>
 			<h2>A Wiki Clone</h2>
 			<form className="search-box">
-				<input type="search" placeholder="Whatever you are looking for is looking for you!"></input>
+				<input type="search" placeholder="Whatever you are looking for is looking for you!" 
+					value={search}
+					onChange={e => setSearch(e.target.value)}>
+				</input>
 			</form>
 			<p className="count">Search Outcomes: 0</p>
 			</header>
