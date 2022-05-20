@@ -1,4 +1,7 @@
 # Billion Short 🔍🌐
+
+![giphy (1)](https://user-images.githubusercontent.com/64256552/169469052-09410d55-507e-43c9-86f5-3f617a5635cf.gif)
+
 A Wikipedia Clone using React JS.
 Billion Short - An ideal search tool that would comprehend exactly what you meant and return precisely what you requested.
 
